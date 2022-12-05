@@ -1,7 +1,5 @@
-import {sequelize} from "./sequelize";
-
 require('dotenv').config();
-
+import {sequelize} from "./sequelize";
 import cors from 'cors';
 import express from 'express';
 
