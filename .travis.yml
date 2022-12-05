@@ -20,7 +20,7 @@ script:
   - echo "Pushing...."
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push ddatngfpthcm/udagram-api-feed
-  - docker push ddatngfpthcm/udagram-api-user
-  - docker push ddatngfpthcm/udagram-reverseproxy
-  - docker push ddatngfpthcm/udagram-frontend
+  - docker push ddatngfpthcm/udagram-api-feed:v1
+  - docker push ddatngfpthcm/udagram-api-user:v1
+  - docker push ddatngfpthcm/udagram-reverseproxy:v1
+  - docker push ddatngfpthcm/udagram-frontend:v1
